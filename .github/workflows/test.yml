@@ -29,6 +29,9 @@ jobs:
         run: sleep 5
 
       - name: Version
+      - run: pwd && ls -al
+      - uses: actions/checkout@v4
+      - run: pwd && ls -al
       - run: go version
       - uses: actions/setup-go@v5  
           with:
