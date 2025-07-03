@@ -34,8 +34,6 @@ jobs:
       - run: pwd && ls -al
       - run: go version
       - uses: actions/setup-go@v5  
-          with:
-            go-version: '1.22'
       - run: go version
 
       # Runs a set of commands using the runners shell
